@@ -15,6 +15,5 @@ RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 22
-EXPOSE 80
 EXPOSE 3000
 CMD ["/usr/sbin/sshd", "-D"]
